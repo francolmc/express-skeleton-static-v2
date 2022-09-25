@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import TestRouters from './test/routes/index';
+import TestRouters from '@app/test/routes/index';
 
 // export all routes
 const router: Router = Router();

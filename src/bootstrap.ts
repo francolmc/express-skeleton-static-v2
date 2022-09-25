@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import vars from './config/vars';
-import AllRoutes  from './site/index';
+import vars from '@config/vars';
+import AllRoutes  from '@app/index';
 
 const app = express();
 

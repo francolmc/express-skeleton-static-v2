@@ -1,5 +1,5 @@
 import { Service } from "typedi";
-import { HomeBody } from "../models/home.entity";
+import { HomeBody } from "@core/test/models/home.entity";
 
 @Service()
 export class HomeService {
