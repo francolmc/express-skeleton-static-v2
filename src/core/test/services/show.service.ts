@@ -1,5 +1,5 @@
 import { Service } from "typedi";
-import { Article } from "../models/article.entity"
+import { Article } from "@core/test/models/article.entity"
 
 @Service()
 export class ShowService {

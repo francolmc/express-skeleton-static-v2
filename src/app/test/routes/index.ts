@@ -1,8 +1,7 @@
 import { Request, Response, Router } from 'express';
 import Container from 'typedi';
-import HomeController from '../controllers/home.controller';
-import { ShowController } from '../controllers/show.controller';
-import { HomeService } from '../services/home.service';
+import HomeController from '@app/test/controllers/home.controller';
+import ShowController from '@app/test/controllers/show.controller';
 
 const router: Router = Router();
 

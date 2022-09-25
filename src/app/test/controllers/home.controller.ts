@@ -1,12 +1,12 @@
+import { HomeBody } from "@core/test/models/home.entity";
+import { HomeService } from "@core/test/services/home.service";
 import { Request, Response } from "express";
-import { Inject, Service } from "typedi";
-import { HomeBody } from "../models/home.entity";
-import { HomeService } from "../services/home.service";
+import { Service } from "typedi";
 
 @Service()
 class HomeController {
     constructor( 
-        private readonly _homeService: HomeService 
+        private readonly _homeService: HomeService
     ) {}
 
     public home(req: Request, res: Response) {

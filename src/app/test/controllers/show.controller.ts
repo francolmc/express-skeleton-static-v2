@@ -1,10 +1,10 @@
+import { Article } from "@core/test/models/article.entity";
+import { ShowService } from "@core/test/services/show.service";
 import { Request, Response } from "express";
 import { Service } from "typedi";
-import { Article } from "../models/article.entity";
-import { ShowService } from "../services/show.service";
 
 @Service()
-export class ShowController {
+export default class ShowController {
     public constructor( private readonly _showService: ShowService ) {}
 
     public show(req: Request, res: Response) {
