@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { Inject, Service } from "typedi";
-import { HomeBody } from "../models/home.entity";
-import { HomeService } from "../services/home.service";
+import { Service } from "typedi";
+import { HomeBody } from "../../../app/test/models/home.entity";
+import { HomeService } from "../../../app/test/services/home.service";
 
 @Service()
 class HomeController {

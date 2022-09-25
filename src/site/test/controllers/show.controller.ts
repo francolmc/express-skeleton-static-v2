@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { Service } from "typedi";
-import { Article } from "../models/article.entity";
-import { ShowService } from "../services/show.service";
+import { Article } from "../../../app/test/models/article.entity";
+import { ShowService } from "../../../app/test/services/show.service";
 
 @Service()
 export class ShowController {

@@ -2,12 +2,12 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import vars from './config/vars';
-import AllRoutes  from './app/index';
+import AllRoutes  from './site/index';
 
 const app = express();
 
 // settings
-app.set('port', vars.PORT || 3000);
+app.set('port', +(vars.PORT || 3000));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
